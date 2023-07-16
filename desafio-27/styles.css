@@ -1,0 +1,88 @@
+:root {
+  --gray-01: #d6d6f2;
+  --gray-02: #e2e2f5;
+  --purple: #bf7bfb;
+  --blue-light: #212187;
+  --blue: #151557;
+  --blue-dark: #000013;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: no-repeat center center/cover url('./assets/background.jpg');
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+
+  padding: 0 10rem;
+}
+
+main {
+  color: var(--gray-01);
+  max-width: 23.75rem;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.button-wrapper {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+
+  background: var(--blue);
+  border-radius: 62.4375rem;
+
+  color: var(--gray-02);
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--blue-light);
+}
